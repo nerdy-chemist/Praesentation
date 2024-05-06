@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inhaltsverzeichnis</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/inhalt.css" /> 
+</head>
+<body>
+    <p class="line-1 anim-typewriter">Inhaltsverzeichnis</p>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './index.html';
+          }
+        });
+        document.body.addEventListener('click', function() {
+            window.location.href = './inhalt.html';
+        });
+      </script>
+</body>
+</html>
