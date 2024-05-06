@@ -20,7 +20,7 @@ body{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    /*transform: translateY(-50%);*/
 }
 
 .anim-typewriter{
