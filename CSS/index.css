@@ -14,7 +14,7 @@ body{
     position: relative;
     top: 50%;  
     width: 20em;
-    margin: 0 auto;
+    margin: auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
