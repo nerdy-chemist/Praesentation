@@ -6,7 +6,7 @@ html{
 body{
   height: calc(100vh - 8em);
   padding: 4em;
-  color: green;
+  color: rgb(12, 97, 12);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
 }
@@ -16,7 +16,7 @@ body{
     width: 20em;
     margin: auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size: 250%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -24,12 +24,12 @@ body{
 }
 
 .anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 1s steps(40) 1s 1 normal both,
+             blinkTextCursor 500ms steps(40) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 9em;}
+  to{width: 8em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}

@@ -1,0 +1,19 @@
+html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+  body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    font-family: 'Anonymous Pro', monospace;  
+    background-color: rgb(25,25,25);  
+  }
+  .title {
+    font-size: 250%;
+    color: rgb(12, 97, 12);
+  }
+  .list-main {
+    font-size: 150%;
+    color: aliceblue;
+  }

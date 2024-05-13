@@ -8,15 +8,26 @@
 </head>
 <body>
     <p class="line-1 anim-typewriter">Inhaltsverzeichnis</p>
+    <ul id="inhaltlist" class="inhaltlist">
+      <li><a href='./algemines.html' style="color: aliceblue;">Allgemeines</a></li>
+      <li>Nutzen von Schadprogramme</li>
+      <li>Schutz von Malware</li>
+      <li>Was tun wenn betroffen</li>
+      <li>Arten von Schadprogramme</li>
+    </ul>
+
     <script>
+        var count = 0;
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
             window.location.href = './index.html';
           }
+          if (event.key === 'ArrowRight') {
+            if (count === 0) {document.getElementById("inhaltlist").style.visibility = "visible"; count = count + 1}
+            else { window.location.href = './algemines.html';}
+          }
         });
-        document.body.addEventListener('click', function() {
-            window.location.href = './index.html';
-        });
-      </script>
+        
+    </script>
 </body>
 </html>
