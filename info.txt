@@ -1,0 +1,22 @@
+Title -> Inhalt:
+- Malware, was ist das?
+- Arten von malware:
+    ____________________________________________
+    |             |               |            |
+    |     1       |       2       |      3     |
+    |             |  |¯¯¯¯¯¯¯¯¯¯| |            |
+    |----------------|   Title  |--------------|
+    |          |     |__________|     |        |
+    |    4     |          |           |    7   |
+    |          |    5     |      6    |        |
+    |          |          |           |        |
+    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1. Virus check
+2. Worm check
+3. Spyware check
+4. Trojan Horse check
+5. Keylogger check
+6. Rootkit check 
+7. Adware check
+
+

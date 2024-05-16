@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arten Von Schadprogramme</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/artenvonschadprogramme.css" /> 
+  </head>
+  <body>
+    <div class="title">
+      <p>Arten von Schadsoftware</p>
+      <div class="container">
+        
+        <div class="box" onclick="virus()">
+          <div class="content">
+            <img src="./CSS/images/warning.png">
+            <p>Virus</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/worm.png">
+            <p>Worm</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/spyware.png">
+            <p>Spyware</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/trojan-horse.png">
+            <p>Trojan Horse</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/keylogger.png">
+            <p>Keylogger</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/rootkit.png">
+            <p>Rootkit</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="./CSS/images/adware.png">
+            <p>Adware</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--
+      <div style="visibility: hidden;">
+        <a href="https://www.flaticon.com/free-icons/trojan" title="trojan icons">Trojan icons created by Freepik - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/spyware" title="spyware icons">Spyware icons created by Superarticons - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/virus" title="virus icons">Virus icons created by Freepik - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/worm" title="worm icons">Worm icons created by Eucalyp - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/worm" title="worm icons">Worm icons created by Eucalyp - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/rootkit" title="rootkit icons">Rootkit icons created by Freepik - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/seo" title="seo icons">Seo icons created by Freepik - Flaticon</a>
+      </div>
+    -->
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './algemines.html';
+          }
+          if (event.key === 'ArrowRight') {
+            window.location.href = './algemines.html';
+          }
+        });
+        function virus() {
+          window.location.href = './index.html'
+        }
+        
+    </script>
+  </body>
+</html>
