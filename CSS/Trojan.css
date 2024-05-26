@@ -1,0 +1,13 @@
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgb(255, 255, 255);
+    font-family: 'Anonymous Pro', monospace;  
+    /*background-color: rgb(25,25,25);*/
+    /*background: linear-gradient(45deg,#e66465, #9198e5);*/
+    background-image: url("./images/trojan.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
