@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/spyware.css" /> 
+    <title>Spyware</title>
+</head>
+<body>
+    <h2>Spyware</h1>
+    <ul class="main">
+        <li>Art von Malware, installiert sich ohne wissen des Opfers</li>
+        <!--der Opfer bekommt nict mit, das diese Malware sich installiert hat-->
+        <li>sammelt Informationen vom Gerät:
+            <ul class="abc">
+                <li>Passwörter</li>
+                <li>Kreditkartennummern</li>
+            </ul>
+        </li>
+        <li>Spyware führen unterschiedliche Angriffe
+            <ul class="abc">
+                <li>Tastenanschläge aufzuzeichnen</li>
+                <li>Zugriff auf Kamera und Mikrofon</li>
+                <li>Browserverlauf mitzuschneiden</li>
+            </ul>
+        </li>
+        <li>Folgen:
+            <ul class="abc">
+                <li>Fehler bei Ausfürhung von Anwendungen</li>
+                <li>Langsamere Geschwindigkeit</li>
+                <li>geringe Akkulaufzeiten</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './artenvonschadprogramme.html';
+          }
+          if (event.key === 'ArrowRight') {
+            window.location.href = './Trojan.html';
+          }
+        });
+    </script>
+</body>
+</html>

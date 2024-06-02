@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/keylogger.css" /> 
+    <title>Key Logger</title>
+</head>
+<body>
+    <h2>Key Logger</h1>
+    <ul class="maina">
+        <li>registrieren heimlich jeden Tastendruck</li>
+        <li>Tastenanschläge in einer Datei</li>
+        <li>Ziele:
+            <ul class="sub">
+                <li>Anmeldeinformationen und Passwörter</li>
+                <li>vertrauenswürdige Daten eines Unternehmens auszulesen</li>
+                <li>interne Chats mitzulesen</li>
+            </ul>
+        </li>
+        <li>im Grunde genommen Spione</li>
+        <li>Vorteile für Kriminellen:
+            <ul class="sub">
+                <li>keine Verschlüsselungen</li>
+                <li>Kreditkartennummern, Passwörter oder TAN-Nummern</li>
+            </ul>
+        </li>
+        <li>Zwei Arten davon:
+            <ul class="sub">
+                <li>Hardware Keylogger</li>
+                <li>Software Keylogger</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './artenvonschadprogramme.html';
+          }
+          if (event.key === 'ArrowRight') {
+            window.location.href = './rootkits.html';
+          }
+        });
+    </script>
+</body>
+</html>

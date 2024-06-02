@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/adware.css" /> 
+    <title>Adware</title>
+</head>
+<body>
+    <h2>Ad-Ware</h1>
+    <div id="main-content">
+      <p>This page is used to demonstrate how adware works by showing multiple pop-up ads.</p>
+    </div>
+    <div id="ad-container"></div>
+    <script>
+      let continueCreating = "abc";
+      document.addEventListener("DOMContentLoaded", function() {
+        const adContainer = document.getElementById('ad-container');
+        const maxBoxes = 50;
+        let totalBoxesCreated = 0;
+        
+        function createAdBox() {
+            if (totalBoxesCreated >= maxBoxes) return;
+            
+            const adBox = document.createElement('div');
+            const text = ["Free Robux", "Click for free V-Bucks"];
+            adBox.className = 'ad-box';
+            
+            const adContent = document.createElement('div');
+            adContent.className = 'ad-content';
+            adContent.textContent = text[Math.floor(Math.random() * text.length)];
+            
+            adBox.appendChild(adContent);
+            
+            adBox.style.top = `${Math.random() * 90}%`;
+            adBox.style.left = `${Math.random() * 90}%`;
+
+            adBox.addEventListener('click', () => {
+                adBox.remove();
+                createAdBox(); // Create a new ad box when one is closed
+            });
+            
+            adContainer.appendChild(adBox);
+            totalBoxesCreated++;
+          }
+        
+        const intervalId = setInterval(() => {
+            for (let i = 0; i < 5; i++) {
+                if (totalBoxesCreated < maxBoxes) {
+                    createAdBox();
+                } else {
+                    clearInterval(intervalId);
+                    break;
+                }
+            }
+        }, 100);
+      });
+
+
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './artenvonschadprogramme.html';
+          }
+          if (event.key === 'ArrowRight') {
+            totalBoxesCreated = maxBoxes;
+            //window.location.href = './index.html';
+          }
+          if (event.key == 'ArrowUp') {
+            continueCreating = false;
+          }
+        });
+    </script>
+</body>
+</html>

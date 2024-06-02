@@ -18,14 +18,14 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="worm()">
           <div class="content">
             <img src="./CSS/images/worm.png">
             <p>Worm</p>
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="spyware()">
           <div class="content">
             <img src="./CSS/images/spyware.png">
             <p>Spyware</p>
@@ -39,21 +39,21 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="keylogger()">
           <div class="content">
             <img src="./CSS/images/keylogger.png">
             <p>Keylogger</p>
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="rootkits()">
           <div class="content">
             <img src="./CSS/images/rootkit.png">
             <p>Rootkit</p>
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="adware()">
           <div class="content">
             <img src="./CSS/images/adware.png">
             <p>Adware</p>
@@ -65,7 +65,7 @@
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
-            window.location.href = './algemines.html';
+            window.location.href = './allgemeines.html';
           }
           if (event.key === 'ArrowRight') {
             window.location.href = './Viren.html';
@@ -73,6 +73,21 @@
         });
         function virus() {
           window.location.href = './Viren.html'
+        };
+        function worm() {
+          window.location.href = './worm.html'
+        };
+        function keylogger() {
+          window.location.href = './keylogger.html'
+        };
+        function rootkits() {
+          window.location.href = './rootkits.html'
+        };
+        function adware() {
+          window.location.href = './adware.html'
+        };
+        function spyware() {
+          window.location.href = './spyware.html'
         };
         var count = 1;
         function trojan() {
