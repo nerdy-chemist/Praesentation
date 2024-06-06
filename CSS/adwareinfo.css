@@ -1,3 +1,4 @@
+
 body{
     height: calc(100vh - 8em);
     padding: 4em;
@@ -5,7 +6,7 @@ body{
     font-family: 'Anonymous Pro', monospace;  
     /*background-color: rgb(25,25,25);*/
     /*background: linear-gradient(45deg,#e66465, #9198e5);*/
-    background-image: url("./images/rootkits.jpg"); 
+    background-image: url("./images/adware.jpg.avif");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,12 +26,11 @@ ul {
     margin: 0 auto;
     white-space: nowrap;
     text-align: left;
-    list-style: disc;
+    list-style:disc;
     font-size: 200%;
-    background-color: rgba(255, 255, 255, 0.304);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     max-width: 100%;
     max-height: 80%;
-    line-height: 120%;
 }

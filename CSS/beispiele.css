@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./images/arten.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    gap: 20px; 
+}
+
+.box {
+    background-color: #ffffff64; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 33%; 
+    padding: 20px;
+    font-size: 150%;
+    box-sizing: border-box; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li {
+    padding: 10px 0; 
+    border-bottom: 1px solid #ffffff; 
+}
+
+li:last-child {
+    border-bottom: none; 
+}
+p {
+    font-size: 150%;
+    text-align: center;
+}

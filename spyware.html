@@ -11,12 +11,14 @@
     <ul class="main">
         <li>Art von Malware, installiert sich ohne wissen des Opfers</li>
         <!--der Opfer bekommt nict mit, das diese Malware sich installiert hat-->
+        <!--fremde Computer oder Systeme heimlich auszuspionieren-->
         <li>sammelt Informationen vom Gerät:
             <ul class="abc">
                 <li>Passwörter</li>
                 <li>Kreditkartennummern</li>
             </ul>
         </li>
+        <!--Daten werden entweder für eigene Zwecke genutzt oder an Dritte weitergegeben-->
         <li>Spyware führen unterschiedliche Angriffe
             <ul class="abc">
                 <li>Tastenanschläge aufzuzeichnen</li>
@@ -31,13 +33,15 @@
                 <li>geringe Akkulaufzeiten</li>
             </ul>
         </li>
+        <!--direkten negativen Einfluss auf das System hat diese Malware nicht-->
+        <!--schaden entstehen dadurch, dass sensible Daten in die falschen Hände geraten können-->
     </ul>
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
             window.location.href = './artenvonschadprogramme.html';
           }
-          if (event.key === 'ArrowRight') {
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
             window.location.href = './Trojan.html';
           }
         });

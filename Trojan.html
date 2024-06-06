@@ -10,18 +10,21 @@
     <h2>Trojaner</h1>
     <ul>
         <li>Gibt sich als legitime Software aus</li>
+        <!--Sie gibt vor, ein harmloses oder vielleicht sogar nützliches Programm zu sein-->
         <li>Wenn runtergeladen: infiziert dein Rechener</li>
+        <!--überwachen Trojanische Pferde heimlich das Hostsystem-->
         <li>Tastenanschläge und die besuchten Websites aufzeichnen</li>
         <li>Informationen an einen böswilligen Hacker senden</li>
         <li>Geisel, klauen oder verschlüsselung von Datein</li>
         <li>Für die entschlüsseln muss man bezahlen</li>
+      
     </ul>
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
             window.location.href = './artenvonschadprogramme.html';
           }
-          if (event.key === 'ArrowRight') {
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
             window.location.href = './keylogger.html';
           }
         });

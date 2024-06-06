@@ -9,19 +9,20 @@
   <body>
     <p class="line-1 anim-typewriter">Inhaltsverzeichnis</p>
     <ul id="inhaltlist" class="inhaltlist">
-      <li><a href='./algemines.html'>Allgemeines</a></li>
+      <li><a href='./allgemeines.html'>Allgemeines</a></li>
+      <li><a href='./nutzenVonSchadProgramme.html'>Nutzen von Schadprogramme</a></li>
       <li><a href='./artenvonschadprogramme.html'>Arten von Schadprogramme</a></li>
-      <li>Nutzen von Schadprogramme</li>
+      <li><a href="./beispiele.html">Berühmte Schadsoftware</a></li>
       <li>Schutz von Malware</li>
       <li>Was tun wenn betroffen</li>
+      
+      <li>Sind alles Schadsoftware böse?</li>
     </ul>
     <script>
         var count = 0;
         document.addEventListener('keydown', function(event) {
-          if (event.key === 'ArrowLeft') {
-            window.location.href = './index.html';
-          }
-          if (event.key === 'ArrowRight') {
+          if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
             if (count === 0) {document.getElementById("inhaltlist").style.visibility = "visible"; count = count + 1}
             else { window.location.href = './allgemeines.html';}
           }

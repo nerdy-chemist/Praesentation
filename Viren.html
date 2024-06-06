@@ -13,14 +13,17 @@
         <li>Ziel: Normalbetrieb eines Geräts zu stören</li>
         <li>Daten aufzeichnen, manipulieren oder löschen</li>
         <li>Programme, die sich unkontrolliert vermehren</li>
+        <!--Erstellen kopien von sich selbst und sich so eigenständig auf einem System oder innerhalb eines Netzwerks verbreiten-->
         <li>Ausbreitung auf andere Geräte: öffnen von schädliche Dateien</li>
+        <!--Verbreitet sich, indem man die schädliche datei öffne-->
+        <!--älteste Form der Malware-->
     </ul>
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
             window.location.href = './artenvonschadprogramme.html';
           }
-          if (event.key === 'ArrowRight') {
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
             window.location.href = './worm.html';
           }
         });

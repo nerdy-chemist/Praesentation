@@ -8,15 +8,12 @@
 </head>
 <body>
     <h2>Ad-Ware</h1>
-    <div id="main-content">
-      <p>This page is used to demonstrate how adware works by showing multiple pop-up ads.</p>
-    </div>
     <div id="ad-container"></div>
     <script>
       let continueCreating = "abc";
       document.addEventListener("DOMContentLoaded", function() {
         const adContainer = document.getElementById('ad-container');
-        const maxBoxes = 50;
+        const maxBoxes = 420;
         let totalBoxesCreated = 0;
         
         function createAdBox() {
@@ -61,12 +58,8 @@
           if (event.key === 'ArrowLeft') {
             window.location.href = './artenvonschadprogramme.html';
           }
-          if (event.key === 'ArrowRight') {
-            totalBoxesCreated = maxBoxes;
-            //window.location.href = './index.html';
-          }
-          if (event.key == 'ArrowUp') {
-            continueCreating = false;
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './adwareinfo.html';
           }
         });
     </script>

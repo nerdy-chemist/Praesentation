@@ -9,14 +9,28 @@
 <body>
     <h2>Root Kits</h1>
     <ul>
-
+      <li>Sammlung verschiedener Schadprogramme</li>
+      <!--Rootkit handelt es sich nicht um eine einzelne Malware – stattdessen ist es eine ganze Sammlung verschiedener Schadprogramme-->
+      <li>tauchten in den frühen 90er-Jahren</li>
+      <!--Auf Unix-ähnliche Betriebssysteme wie Linux ab-->
+      <li>Sicherheitslücke</li>
+      <!--über eine Sicherheitslücke in einen Computer einnistet-->
+      <li>Erlaubt ferngesteuerten Zugriff</li>
+      <!--ferngesteuerten Zugriff: wenn man von einem andreren gerät mit deiner sich verbindent und -->
+      <!--Angreifern den dauerhaften ferngesteuerten Zugriff (Remote-Access) auf diesen erlaubt-->
+      <li>verstecken sich vor Virenscannern und Sicherheitslösungen </li>
+      <!--Die können sich und andere Malware arten vor Viren scannern und sicherheislösungen verstecken-->
+      <li>Administrationsrechte verschaffen (Kernel-Mode-Rootkit)</li>
+      <!--Hacker sogar umfassende Administrationsrechte verschaffen, uneingeschränkte Kontrolle über den Rechner-->
+      <!--Bedeutung=> admin ist als root in Unix Betriebsystemme bezeichnet, kit: Werkzeuge-->
+      <!--Root(admin)-Rechte über einen Computer zu erlangen-->
     </ul>
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {
             window.location.href = './artenvonschadprogramme.html';
           }
-          if (event.key === 'ArrowRight') {
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
             window.location.href = './adware.html';
           }
         });

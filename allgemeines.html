@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./CSS/allgemeines.css" />
-    <title>Allgeimen infos</title>
+    <title>Allgemeine Infos</title>
 </head>
 <body>
-    <p class="title">Algemeines:</p>
+    <p class="title">Allgemeines:</p>
     <ul style="list-style: square;" class="list-main">
-      <li>
-        Programme, um aus Sicht des Opfers, schädliche und unerwünschte Funktionen auszuführen.
-      </li>
+      <li>Das Begriff "Schadsoftware"</li>
+      <!--Schadsoftware ist eine oberbegriff für alle bösartigen programme oder codes, die Systeme beschädigen-->
       <li>bekannt als Malware</li>
-      <li><a href="https://www.microsoft.com/de-de/security/business/security-101/what-is-malware"style="color: aliceblue;">Mehr infos</a></li>
+      <!--Bekannt als Malware-->
+      <li>Ähnlich wie Grippe bei Menschen</li>
+      <!--Wie bei der Grippe bei Menschen beeinträchtigt sie die normalen Funktionen.-->
+      <li>schädliche und unerwünschte Funktionen auszuführen.</li>
+      <!--Programme, um aus Sicht des Opfers, schädliche und unerwünschte funktionen auszuführen-->
+      <li>kann sie Ihre Daten stehlen, verschlüsseln oder löschen</li>
+      <!--Kann die physische Hardware von Systemen oder Netzwerkausrüstungen nicht beschädigen, aber kann sie unsere Daten stehlen, verschlüsseln oder löschen-->
+      <li><a href="https://www.microsoft.com/de-de/security/business/security-101/what-is-malware" style="color: black;">Mehr infos</a></li>
     </ul>
     <p style="visibility: hidden;"> 
         Nutzen von Schadprogrammen: 
@@ -30,12 +36,8 @@
   
         <script>
           document.addEventListener('keydown', function(event) {
-            if (event.key === 'ArrowLeft') {
-              window.location.href = './inhalt.html';
-            }
-            if (event.key === 'ArrowRight') {
-            window.location.href = './artenvonschadprogramme.html';
-          }
+            if (event.key === 'ArrowLeft') {window.location.href = './inhalt.html';}
+            if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './nutzenVonSchadProgramme.html';}
           });
           
         </script>

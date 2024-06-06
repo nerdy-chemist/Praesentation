@@ -1,16 +1,16 @@
 Title -> Inhalt:
 - Malware, was ist das?
 - Arten von malware:
-    ____________________________________________
-    |             |               |            |
-    |     1       |       2       |      3     |
-    |             |  |¯¯¯¯¯¯¯¯¯¯| |            |
-    |----------------|   Title  |--------------|
-    |          |     |__________|     |        |
-    |    4     |          |           |    7   |
-    |          |    5     |      6    |        |
-    |          |          |           |        |
-    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+____________________________________________
+|             |               |            |
+|     1       |       2       |      3     |
+|             |  |¯¯¯¯¯¯¯¯¯¯| |            |
+|----------------|   Title  |--------------|
+|          |     |__________|     |        |
+|    4     |          |           |    7   |
+|          |    5     |      6    |        |
+|          |          |           |        |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 1. Virus check
 2. Worm check
 3. Spyware check
@@ -18,5 +18,16 @@ Title -> Inhalt:
 5. Keylogger check
 6. Rootkit check 
 7. Adware check
+check 
+--------------------------------------------------
 
+Schadsoftware ist der Oberbegriff für alle bösartigen Programme oder Codes, die Systeme beschädigen.
+Bösartige, mit bewusst schädigenden Absichten entwickelte, aggressive Schadsoftware versucht, in 
+Computer, Computersysteme, Netzwerke, Tablets und Mobilgeräte einzudringen, sie zu schädigen oder außer Gefecht zu setzen. 
+Dabei kommt es häufig teilweise zur Übernahme der Kontrolle über die Vorgänge auf dem Gerät. 
+Wie bei der Grippe bei Menschen beeinträchtigt sie die normalen Funktionen.
 
+Bei Schadsoftware geht es einzig und allein darum, auf illegale Weise Geld an Ihnen zu verdienen. 
+Auch wenn Schadsoftware die physische Hardware von Systemen oder Netzwerkausrüstungen nicht beschädigen kann 
+(mit einer bekannten Ausnahme – siehe Abschnitt unten zu Google Android), kann sie Ihre Daten stehlen, verschlüsseln oder löschen, 
+die Hauptfunktionen eines Computers verändern oder übernehmen und, ohne Ihr Wissen oder Ihre Genehmigung, Ihre Computeraktivitäten ausspionieren.

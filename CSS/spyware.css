@@ -12,7 +12,7 @@ body{
     background-size: cover;
 }
 h2 {
-    font-size: 250%;
+    font-size: 300%;
     text-align: center;
 }
 .main {
@@ -24,23 +24,23 @@ h2 {
     margin: 0 auto;
     white-space: nowrap;
     text-align: left;
-    list-style:square;
-    font-size: 175%;
-    background-color: rgba(255, 255, 255, 0.304);
+    list-style: disc;
+    font-size: 200%;
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     max-width: 100%;
     max-height: 80%;
 }
 .abc {
-    font-size: 75%;
+    font-size: 69%;
     list-style:disc;
 }
 .abc {
-    font-size: 75%;
+    font-size: 69%;
     list-style:disc;
 }
 .abc {
-    font-size: 75%;
+    font-size: 69%;
     list-style:disc;
 }
