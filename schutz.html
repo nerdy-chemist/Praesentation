@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/schutz.css" /> 
+    <title>Schutz</title>
+</head>
+<body>
+    <h2>Schutz vor Malware</h1>
+    <ul>
+        <li>Software und Compuer auf dem Aktuellen Stand halten</li>
+        <li>Verwenden Sie nach Möglichkeit kein Administratorkonto</li>
+        <li>Überlegen Sie gut, ehe Sie auf einen Link klicken oder etwas herunterladen</li>
+        <li>Tauschen Sie möglichst wenige Dateien mit anderen.</li>
+        <li>Verwenden Sie Antivirenprogramme.</li>
+    </ul>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './beispiele.html';
+          }
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './wastun.html';
+          }
+        });
+        document.body.addEventListener('click', function() {window.location.href = './wastun.html';});
+    </script>
+</body>
+</html>

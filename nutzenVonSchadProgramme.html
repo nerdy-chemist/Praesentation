@@ -17,13 +17,16 @@
       <!---->
       <li>Computeraktivitäten ausspionieren</li>
       <!--Ohne unsere wissens Computeraktivitäten ausspionieren-->
+      <li>bestimmter Informationen zu gelangen</li>
+      <li>Befriedigung persönlicher Emotionen</li>
+      <!--Angriffe werden durchgeführt, um gezielt und zur Befriedigung persönlicher Emotionen Schäden zu erzeugen-->
     </ul>
     <script>
         document.addEventListener('keydown', function(event) {
           if (event.key === 'ArrowLeft') {window.location.href = './allgemeines.html';}
           if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './artenvonschadprogramme.html';}
         });
-        
+        document.body.addEventListener('click', function() {window.location.href = './artenvonschadprogramme.html';});
     </script>
   </body>
 </html>

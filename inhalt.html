@@ -13,9 +13,9 @@
       <li><a href='./nutzenVonSchadProgramme.html'>Nutzen von Schadprogramme</a></li>
       <li><a href='./artenvonschadprogramme.html'>Arten von Schadprogramme</a></li>
       <li><a href="./beispiele.html">Berühmte Schadsoftware</a></li>
-      <li>Schutz von Malware</li>
-      <li>Was tun wenn betroffen</li>
-      
+      <li><a href="./schutz.html">Schutz vor Malware</a></li>
+      <li><a href="./wastun.html">Was tun wenn betroffen</a></li>
+      <li>Funktionsweise von Malware</li>
       <li>Sind alles Schadsoftware böse?</li>
     </ul>
     <script>
@@ -26,6 +26,10 @@
             if (count === 0) {document.getElementById("inhaltlist").style.visibility = "visible"; count = count + 1}
             else { window.location.href = './allgemeines.html';}
           }
+        });
+        document.body.addEventListener('click', function(){
+          if (count === 0) {document.getElementById("inhaltlist").style.visibility = "visible"; count = count + 1}
+          else {window.location.href = './allgemeines.html';}
         });
         
     </script>

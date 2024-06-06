@@ -38,3 +38,4 @@ https://www.ionos.de/digitalguide/server/sicherheit/malware/
 https://de.malwarebytes.com/malware/
 https://www.ionos.de/digitalguide/server/sicherheit/was-ist-ein-rootkit/
 https://www.crowdstrike.de/cybersecurity-101/adware/
+https://support.google.com/google-ads/answer/2375413?hl=de

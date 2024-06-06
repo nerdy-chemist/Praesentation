@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/schutz.css" /> 
+    <title>Was tun</title>
+</head>
+<body>
+    <h2>Was soll ich tun wenn ich malware installiert habe?</h1>
+    <ul>
+        <li>Antivirensoftware herunterladen</li>
+        <li>Infizierte Dateien löschen</li>
+        <li>Browsereinstellungen zurücksetzen</li>
+        <li>Betriebssystem aktualisieren</li>
+        <li>Sicherheitscheck vornehmen</li>
+    </ul>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './beispiele.html';
+          }
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './index.html';
+          }
+        });
+        document.body.addEventListener('click', function() {window.location.href = './index.html';});
+    </script>
+</body>
+</html>
