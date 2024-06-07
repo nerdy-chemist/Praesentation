@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/beispiele.css" /> 
+    <title>Beispiele</title>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+
+          <p>Forschung und Ausbildung:</p>
+          <ul>
+            <li>Cybersicherheitsforschung und -ausbildung</li>
+            <li>Sicherheitsexperten zu schulen</li>
+            <li>Bedrohungen erkennen und bekämpfen können</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+
+          <p>“Goodware” gegen Botnets:</p>
+          <ul>
+            <li>Sicherheitsforscher entwickeln spezielle Programme</li>
+            <li>Botnets zu bekämpfen</li>
+            <li>sich auf kompromittierte Systeme einhacken</li>
+            <li>der Kontrolle durch bösartige Akteure zu befreien</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+
+          <p>Staatstrojaner:</p>
+          <ul>
+            <li>Kriminelle zu überwachen</li>
+            <li>rechtlich und ethisch umstritten</li>
+            <li>hängt von Gesetzgebung und den verwendeten Methoden ab</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './adwareinfo.html';
+          }
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './quiz1.html';
+          }
+        });
+        document.body.addEventListener('click', function() {window.location.href = './quiz1.html';});
+    </script>
+</body>
+</html>

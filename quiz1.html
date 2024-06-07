@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Question</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/quiz1.css" /> 
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+          <div class="box">
+            <div class="content">
+                <p>Was können Malwares tun</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'A', 'result1')">A. Dataein verschlüsseln</button>
+                    <button onclick="checkAnswer(this, 'B', 'result1')">B. Tasteneinschläge speichern</button>
+                    <button onclick="checkAnswer(this, 'C', 'result1')">C. Zugriff auf die Kamera bekommen</button>
+                    <button onclick="checkAnswer(this, 'D', 'result1')">D. A,B und C</button>
+                    <button onclick="checkAnswer(this, 'E', 'result1')">E. Keine</button>
+                    
+                </div>
+                <div class="result1" id="result1"></div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="content">
+                <p>Wofür steht Root in Unix Betriebsystemme</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'A', 'result2')">A. Betriebsystemme</button>
+                    <button onclick="checkAnswer(this, 'B', 'result2')">B. User</button>
+                    <button onclick="checkAnswer(this, 'C', 'result2')">C. Steht für nichts</button>
+                    <button onclick="checkAnswer(this, 'D', 'result2')">D. Administrator </button>
+                </div>
+                <div class="result2" id="result2"></div>
+            </div>
+
+          </div>
+
+          <div class="box">
+            <div class="content">
+                <p>Wofür werden Malwares nicht benutzt</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'A', 'result3')">A. Befriedigung persönlicher Emotionen</button>
+                    <button onclick="checkAnswer(this, 'B', 'result3')">B. Verschlüsseln von Daten</button>
+                    <button onclick="checkAnswer(this, 'C', 'result3')">C. ausspionieren von Computeraktivitäten </button>
+                    <button onclick="checkAnswer(this, 'D', 'result3')">D. Steigerung der Systemleistung </button>
+                </div>
+                <div class="result3" id="result3"></div>
+            </div>
+
+          </div>
+        </div>
+    <div class="question">
+        <h2></h2>
+        
+    </div>
+    
+
+    <script>
+        let count = 69;
+        function checkAnswer(button, answer, eID) {
+            const resultDiv = document.getElementById(eID);
+            if (answer === 'D') {
+                resultDiv.textContent = 'Richtig!';
+                resultDiv.style.color = 'green';;
+            } else {
+                resultDiv.textContent = 'womp womp!';
+                resultDiv.style.color = 'red';
+                count++;
+            }
+            if (count === 72) {window.close();}
+        }
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './zugang.html';
+          }
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './quellen.html';
+          }
+        });
+        document.body.addEventListener('click', function() {window.location.href = './quellen.html';});
+    </script>
+</body>
+</html>

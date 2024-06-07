@@ -10,7 +10,7 @@ html{
 body{
   height: calc(100vh - 8em);
   padding: 4em;
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,0.4);
   font-family: 'Anonymous Pro', monospace;  
   /*background-color: rgb(25,25,25);*/  
 }

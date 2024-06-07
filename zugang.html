@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/zugang.css" /> 
+    <title>Zugang</title>
+</head>
+<body>
+    <h2>Wie bekommen Malwares zugriff auf unsere Daten</h2>
+    <ul>
+        <li>Nutzen recoursen, die jeder zugriff hat</li>
+        <!--sie nutzen resourcen, auf die jeder user Zugriff hat. Da gibt es auch ne ganze Menge. Autostartordner und und und.-->
+        <li>nutzen schwachstellen im System aus</li>
+        <!--sie nutzen schwachstellen im System aus, und holen sich die Rechte dafür unberechtigter weise-->
+        <li>durch aufruf des installationsskript die adminrechte vom User </li>
+        <!--sie tarnen sich in normalen programmen in installationsrouten und lassen sich beim aufruf des installationsskript die adminrechte vom User geben, der in dem glauben nur das Programm zu installieren, die Schadsoftware gratis dazubekommt.-->
+    </ul>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            window.location.href = './wastun.html';
+          }
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+            window.location.href = './ethicalhacking.html';
+          }
+        });
+        document.body.addEventListener('click', function() {window.location.href = './ethicalhacking.html';});
+    </script>
+</body>
+</html>

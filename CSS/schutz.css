@@ -12,9 +12,14 @@ body{
     background-size: cover;
 }
 h2 {
+    position: relative;
+    color: rgb(0, 0, 0);
     font-size: 300%;
-    text-align: left;
-    color: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    width: fit-content;
 }
 ul {
     color: rgb(0, 0, 0);
@@ -27,7 +32,7 @@ ul {
     text-align: left;
     list-style: disc;
     font-size: 200%;
-    background-color: rgba(255, 255, 255, 0.304);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     max-width: 100%;
