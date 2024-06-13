@@ -1,0 +1,28 @@
+button {
+    background-color: rgb(255, 255, 255); /* Green */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #04AA6D;
+    border-width: 3px;
+
+    font-size: 125%;
+    
+}
+body {
+    text-align: center;
+    font-size: 200%;
+
+}
+html {
+    background-image: url("./images/qtrojan.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+button:hover {
+    background-color: darkorchid;
+}
