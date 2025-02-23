@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Statistiken und Aktuelle Entwicklungen</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #e0f7fa, #ffffff);
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 24px;
+                color: #333;
+            }
+
+            .statistics-item {
+                margin-bottom: 30px;
+            }
+
+            .statistics-item h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #4CAF50;
+            }
+
+            .statistics-item p {
+                font-size: 16px;
+                color: #555;
+            }
+
+            .statistics-item img {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Statistiken und aktuelle Entwicklungen</h1>
+
+            <div class="statistics-item">
+                <h2>1. Muslime in Deutschland</h2>
+                <p>In Deutschland leben etwa 5,5 Millionen Muslime, was ca. 6,6 % der Gesamtbevölkerung entspricht (Stand 2023, BAMF).</p>
+                <img src="./CSS/images/muslime-volkszaehlung-grafik-1.png" alt="Statistik über Muslime in Deutschland">
+            </div>
+
+            <div class="statistics-item">
+                <h2>2. Integration der Muslime</h2>
+                <p>Laut einer Allensbach-Umfrage aus 2023 fühlen sich 68 % der Muslime in Deutschland gut integriert.</p>
+                <img src="./CSS/images/DH_L8gxXsAAsmrN.jpg-large.jpeg" alt="Statistik zur Integration der Muslime">
+            </div>
+
+            <div class="statistics-item">
+                <h2>3. Islam und westliche Werte</h2>
+                <p>Jedoch sehen 56 % der deutschen Bevölkerung den Islam laut einer Umfrage des Pew Research Centers als „nicht kompatibel mit westlichen Werten“.</p>
+                <img src="./CSS/images/DWO-IP-Islam-Umfrage-js-Teaser-jpg.jpg" alt="Statistik über Islam und westliche Werte">
+            </div>
+
+            <div class="statistics-item">
+                <h2>4. Extremismusgefahr</h2>
+                <p>Laut Verfassungsschutzbericht 2022 gibt es in Deutschland etwa 28.000 Islamisten, von denen etwa 2.000 als gewaltbereit eingestuft werden.</p>
+                <img src="./CSS/images/verfassungsschutzbericht-2023-zahl-der-extremist-innen-in-v0-ekaky1zo2e7d1.jpg" alt="Statistik zur Extremismusgefahr">
+            </div>
+
+        </div>
+
+    </body>
+    <script>
+        document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
+        if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './unterteilung.html';}
+        });
+    </script>
+</html>

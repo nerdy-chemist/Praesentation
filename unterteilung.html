@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unterteilung islamistischer Strömungen</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #f0f4f7, #ffffff);
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 30px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .stromung {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .stromung h2 {
+                font-size: 24px;
+                color: #4CAF50;
+            }
+
+            .stromung p {
+                font-size: 18px;
+                color: #555;
+                line-height: 1.6;
+            }
+
+            .stromung .highlight {
+                background-color: #e7f9e7;
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+
+            .stromung .example {
+                font-style: italic;
+                color: #666;
+            }
+
+            .stromung div {
+                border-left: 3px solid #4CAF50;
+                padding-left: 15px;
+            }
+
+            .stromung .section-title {
+                color: #333;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Unterteilung islamistischer Strömungen</h1>
+
+            <div class="stromung">
+                <div>
+                    <h2>Gewaltgeneigte Strömungen</h2>
+                    <p>Diese Strömungen begehen in ihren Heimatländern Gewalttaten und verüben Anschläge oder planen terroristische Aktivitäten in anderen Ländern.</p>
+                    <div class="highlight">
+                        <p class="section-title">Beispiel:</p>
+                        <p class="example">Terrorgruppen wie der „Islamische Staat“ oder Al-Qaida.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Reformorientierte Strömungen</h2>
+                    <p>Diese Strömungen haben das Ziel, schleichend gesellschaftliche und politische Einflussnahme durch islamische Normen zu erreichen. Sie nutzen demokratische Mittel wie Vereine und Organisationen, um gesellschaftlichen Wandel herbeizuführen.</p>
+                    <div class="highlight">
+                        <p class="section-title">Beispiel:</p>
+                        <p class="example">Die Muslimbruderschaft.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
+        if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './bedeutung.html';}
+        });
+    </script>
+</html>

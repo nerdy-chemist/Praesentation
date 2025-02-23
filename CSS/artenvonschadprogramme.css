@@ -5,23 +5,45 @@ body {
     min-height: 100vh;
     background-color: #ffffff;
     font-family: 'Anonymous Pro', monospace;
-    background-image: url("./images/arten.jpg"); 
+    background-image: url("./images/imago0093341765h.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .container {
-
-    position: relative;
-    max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: auto-fill, minmax(100px, auto);
-    margin: 40px;
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    width: 90vw;
+    max-width: 900px;
+    
+    /* NEU: Zentriert den Container */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
+
+
+@media (max-width: 700px) { 
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Auch bei kleineren Bildschirmen bleibt es bei max. 3 Spalten */
+    }
+}
+
+@media (max-width: 500px) { 
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Falls noch kleiner, dann 3x2 oder 3x1 */
+    }
+}
+
+@media (max-width: 350px) { 
+    .container {
+        grid-template-columns: repeat(1, 1fr); /* Falls extrem klein, dann 3x1 */
+    }
+}
+
+
 .container .box {
     background-color: #333333;
     padding: 20px;
@@ -44,10 +66,6 @@ body {
     max-width: 100px;
     margin-bottom: 10px;
 
-}
-.container .box:nth-child(1) {
-    grid-column: span 3;
-    grid-row: span 1;
 }
 
 .title {

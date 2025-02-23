@@ -3,18 +3,108 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css" /> 
-    <title>Schadsoftware</title>
+    <title>Arten Von Schadprogramme</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/artenvonschadprogramme.css" /> 
   </head>
   <body>
-    <p class="line-1 typewriter">Schadsoftware</p>
-    <p class="line2">Von Leo und Chin(Hooman)<br>Präsentation für die Schule!</p>
-    <script>
-      document.addEventListener('keydown', function(event) {
-        if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './inhalt.html';}
-      });
-      document.body.addEventListener('click', function() {window.location.href = './inhalt.html';});
-    </script>
+    <div class="title">
+      <p>Die Islamdebatte in Deutschland <br> Gehört der Islam zu Deutschland?</p>
+      <div class="container">
+        <div class="box" onclick="fazit()">
+          <div class="content">
+            <img src="./CSS/images/fazit.png">
+            <p>Fazit und Diskussion</p>
+          </div>
+        </div>
 
+        <div class="box" onclick="einleitung()">
+          <div class="content">
+            <img src="./CSS/images/einleiten.png">
+            <p>Einleitung</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="definition()">
+          <div class="content">
+            <img src="./CSS/images/suche.png">
+            <p>Begriffsdefinition</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="historische()">
+          <div class="content">
+            <img src="./CSS/images/historiker.png">
+            <p>Historische Entwichlung der Debatte</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="argumente()">
+          <div class="content">
+            <img src="./CSS/images/opposition.png">
+            <p>Wichtige Argumente und Positionen</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="statistiken()">
+          <div class="content">
+            <img src="./CSS/images/statistiken.png">
+            <p>Statistiken und Aktueller Entwichlungen</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="unterteilung()">
+          <div class="content">
+            <img src="./CSS/images/islam.png">
+            <p>Unterteilung islamistischer Strömungen</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="bedeutung()">
+          <div class="content">
+            <img src="./CSS/images/forschung.png">
+            <p>Bedeutung von Integration und Reformen</p>
+          </div>
+        </div>
+
+        <div class="box" onclick="politische()">
+          <div class="content">
+            <img src="./CSS/images/bundestag.png">
+            <p>Politische und gesellschaftliche Konsequenzen</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <script>
+        function fazit() {
+          window.location.href = './fazit.html'
+        };
+        function einleitung() {
+          window.location.href = './einleitung.html'
+        };
+        function definition() {
+          window.location.href = './begriffsdefinition.html'
+        };
+        function historische() {
+          window.location.href = './historische.html'
+        };
+        function argumente() {
+          window.location.href = './argumente.html'
+        };
+        function statistiken() {
+          window.location.href = './statistik.html'
+        };
+        function unterteilung() {
+          window.location.href = './unterteilung.html'
+        };
+        function bedeutung() {
+          window.location.href = './bedeutung.html'
+        };
+        function politische() {
+          window.location.href = './politische.html'
+        };
+        
+    </script>
   </body>
 </html>

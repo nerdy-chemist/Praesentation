@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historische Entwicklung der Debatte</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #e0f7fa, #ffffff);
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 30px;
+                color: #333;
+            }
+
+            .timeline {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .timeline li {
+                background-color: #f9f9f9;
+                margin: 10px 0;
+                padding: 15px;
+                border-left: 4px solid #4CAF50;
+                opacity: 0;
+                transform: translateX(-100px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+
+            .timeline li.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            .year {
+                font-weight: bold;
+                font-size: 20px;
+                color: #4CAF50;
+            }
+
+            .event {
+                margin-top: 5px;
+                font-size: 18px;
+                color: #555;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Historische Entwicklung der Debatte</h1>
+            <ul class="timeline">
+                <li data-year="Mittelalter" class="timeline-item">
+                    <span class="year">Mittelalter:</span>
+                    <span class="event">Erste Berührungspunkte zwischen dem Islam und Europa, z. B. durch die Kreuzzüge und den kulturellen Austausch in Al-Andalus (Spanien).</span>
+                </li>
+                <li data-year="1683" class="timeline-item">
+                    <span class="year">1683:</span>
+                    <span class="event">Zweite Wiener Türkenbelagerung – Der Islam wird als Bedrohung für Europa wahrgenommen.</span>
+                </li>
+                <li data-year="20. Jahrhundert" class="timeline-item">
+                    <span class="year">20. Jahrhundert:</span>
+                    <span class="event">Erste größere muslimische Einwanderungswellen nach Deutschland, insbesondere durch Gastarbeiter aus der Türkei ab den 1960er Jahren.</span>
+                </li>
+                <li data-year="2010" class="timeline-item">
+                    <span class="year">2010:</span>
+                    <span class="event">Christian Wulff sagt in seiner Rede zum Tag der Deutschen Einheit: „Der Islam gehört inzwischen auch zu Deutschland.“</span>
+                </li>
+                <li data-year="2015-1" class="timeline-item">
+                    <span class="year">2015:</span>
+                    <span class="event">Die Flüchtlingskrise führt zu einer Intensivierung der Debatte über Migration und Integration.</span>
+                </li>
+                <li data-year="2015-2" class="timeline-item">
+                    <span class="year">2015:</span>
+                    <span class="event">PEGIDA-Demonstrationen („Patriotische Europäer gegen die Islamisierung des Abendlandes“) gewinnen an Popularität.</span>
+                </li>
+                <li data-year="2018" class="timeline-item">
+                    <span class="year">2018:</span>
+                    <span class="event">Horst Seehofer (CSU) betont: „Der Islam gehört nicht zu Deutschland.“</span>
+                </li>
+                <li data-year="2021" class="timeline-item">
+                    <span class="year">2021:</span>
+                    <span class="event">Die Diskussion bleibt weiterhin aktuell, insbesondere im Kontext von Terroranschlägen und Debatten über religiöse Symbole im öffentlichen Raum.</span>
+                </li>
+                <li data-year="2023" class="timeline-item">
+                    <span class="year">2023:</span>
+                    <span class="event">Laut einer Umfrage des Mediendienstes Integration sehen 47 % der Deutschen den Islam als nicht zu Deutschland gehörend, während 42 % der Meinung sind, dass er dazu gehört.</span>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+    <script>
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        function checkVisibility() {
+            const windowHeight = window.innerHeight;
+            timelineItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                if (rect.top < windowHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility();
+
+        document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
+        if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './argumente.html';}
+        });
+
+    </script>
+</html>
