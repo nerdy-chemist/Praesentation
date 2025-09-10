@@ -3,92 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Politische und gesellschaftliche Konsequenzen</title>
+        <title>References</title>
         <style>
             body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #f9f9f9; /* Heller grauer Hintergrund */
+                font-family: 'Arial', sans-serif;
                 margin: 0;
                 padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: linear-gradient(135deg, #1E3C72, #2A5298);
+                color: white;
+                /*ext-align: center;*/
+                animation: fadeIn 1s ease-in-out;
             }
 
             .container {
-                max-width: 900px;
-                margin: 50px auto;
-                padding: 30px;
-                background-color: #ffffff;
+                max-width: 650px;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
                 border-radius: 10px;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
             }
 
             h1 {
-                text-align: center;
-                font-size: 30px;
-                color: #333333;
-                margin-bottom: 30px;
-            }
-
-            .content {
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-            }
-
-            .content div {
-                background-color: #e7f7ff; /* Helles Blau für den Hintergrund */
-                border-left: 6px solid #0288d1; /* Blau für den Rand */
-                padding: 20px;
-                border-radius: 8px;
-            }
-
-            .content div h2 {
-                font-size: 24px;
-                color: #0277bd;
+                font-size: 2.7rem;
                 margin-bottom: 15px;
+                text-align: center;
             }
 
-            .content div p {
-                font-size: 18px;
-                color: #555;
+            p {
+                font-size: 1.5rem;
                 line-height: 1.6;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
         </style>
     </head>
     <body>
 
         <div class="container">
-            <h1>Politische und gesellschaftliche Konsequenzen</h1>
-
-            <div class="content">
-                <div>
-                    <h2>1. Gesetzgebung</h2>
-                    <p>Es gibt laufende Debatten über das Verbot von religiösen Symbolen wie dem Kopftuch, Minaretten und die Anerkennung islamischer Feiertage. Diese Themen betreffen sowohl die Religionsfreiheit als auch das gesellschaftliche Zusammenleben.</p>
-                </div>
-
-                <div>
-                    <h2>2. Medien</h2>
-                    <p>Die Darstellung des Islams in den Medien hat großen Einfluss auf die öffentliche Meinung. Häufig wird der Islam in einem negativen Kontext gezeigt, was zu Misstrauen und Vorurteilen führen kann.</p>
-                </div>
-
-                <div>
-                    <h2>3. Sicherheitsdebatten</h2>
-                    <p>Es gibt eine zunehmende Verbindung zwischen Migration und Terrorismus in den politischen Diskussionen. Diese Debatten beinhalten auch die stärkere Überwachung islamistischer Gruppierungen und die Frage nach der inneren Sicherheit.</p>
-                </div>
-
-                <div>
-                    <h2>4. Bildungspolitik</h2>
-                    <p>Die schulische Integration muslimischer Kinder und der Umgang mit Religionsunterricht sind wesentliche Themen in der Bildungspolitik. Hier geht es um die Vermittlung von Werten und den Umgang mit religiösen Unterschieden im Unterricht.</p>
-                </div>
-            </div>
+            <h1>References</h1>
+            <ul>
+                <li>None yet</li>
+            </ul>
         </div>
 
     </body>
-
     <script>
         document.addEventListener('keydown', function(event) {
-        if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
-        if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './fazit.html';}
+          if (event.key === 'ArrowLeft') {window.location.href = './index.html';}
+          if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {window.location.href = './index.html';}
         });
     </script>
-
 </html>
