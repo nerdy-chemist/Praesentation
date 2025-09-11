@@ -3,93 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Black Tuesday – October 29, 1929</title>
+        <title>Black Tuesday (1929)</title>
         <style>
             body {
-                font-family: Arial, sans-serif;
-                background: linear-gradient(135deg, #850ae3, #da0b0b);
+                font-family: 'Arial', sans-serif;
                 margin: 0;
                 padding: 0;
-                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: linear-gradient(135deg, #840da4, #c9de0c);
+                color: white;
+                /*text-align: center;*/
+                animation: fadeIn 1s ease-in-out;
+                background-image: url("./CSS/p0hg2cpk.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
             }
 
             .container {
-                max-width: 800px;
-                margin: 50px auto;
+                max-width: 700px;
+                background: rgba(255, 255, 255, 0.1);
                 padding: 20px;
-                background-color: rgba(84, 153, 92, 0.525);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
             }
 
             h1 {
+                font-size: 2.3rem;
+                margin-bottom: 15px;
                 text-align: center;
-                font-size: 30px;
-                color: #333;
             }
 
-            .arguments {
-                display: flex;
-                justify-content: space-between;
-                gap: 30px;
-            }
-            /*.arguments img {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; /* centers the image *. /
-    display: block;
-}*/
-            .stromung img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* centers the image */
-    border-radius: 8px; /* optional */
-}
-
-            .arguments > div {
-                flex: 1;
+            .card {
+                background: rgba(255, 255, 255, 0.2);
                 padding: 15px;
-                background-color: #f9f9f9c7;
                 border-radius: 8px;
-                box-shadow: 0 2px 6px rgb(0, 0, 0);
+                margin: 10px 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease;
             }
 
-            .arguments h2 {
-                font-size: 24px;
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+            h2 {
+                font-size: 1.6rem;
                 margin-bottom: 10px;
-                color: #4CAF50;
+                color: #FFD700; /* Gold for contrast */
             }
 
-            .arguments ul {
-                list-style-type: disc;
-                padding-left: 20px;
-                color: #555;
+            p {
+                font-size: 1.3rem;
+                line-height: 1.6;
             }
 
-            .arguments li {
-                margin-bottom: 10px;
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
-
         </style>
     </head>
     <body>
 
         <div class="container">
-            <h1>Black Tuesday – October 29, 1929</h1>
-            <div class="arguments">
-                <div>
-                    <ul>
-                        <li>The Stock Market Crash triggered the Great Depression.</li>
-                        <li>Panic selling caused the collapse of stock prices, wiping out millions of dollars.</li>
-                        <li>Immediate consequences: Banks failed, businesses closed, unemployment skyrocketed.</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./CSS/IMG_1081.jpeg">
-                </div>
-            </div>
+            <h1>Black Tuesday (1929)</h1>
+
+            <ul>
+                <li>On October 29, 1929, known as Black Tuesday, the stock market collapsed.</li>
+                <li>Panic selling sent stock prices plunging, wiping out fortunes overnight.</li>
+                <li>Banks and investors lost billions of dollars within days.</li>
+                <li>Ordinary people who had invested their savings saw them vanish.</li>
+                <li>This crash was the spark that ignited the Great Depression, the worst economic crisis in U.S. history.</li>
+            </ul>
+
         </div>
 
     </body>
